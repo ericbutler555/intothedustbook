@@ -1,0 +1,52 @@
+.buyButton,
+.linkButton {
+  position: relative;
+  top: 0;
+  display: block;
+  width: 30rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  background: lightseagreen;
+  color: white;
+  text-align: center;
+  font-family: "Trade Winds", -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  transform-origin: center center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.buyButton:hover,
+.linkButton:hover {
+  top: 0.4rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.6);
+}
+.buyButton img {
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.linkButton {
+  display: inline-block;
+  width: auto;
+  padding: 1rem 2rem;
+  background: lightslategray;
+  font-size: 1.4rem;
+}
+
+.paperbackLink {
+  background: #bc9134;
+  transform: rotate(1deg);
+}
+.hardcoverLink {
+  background: #d08155;
+  transform: rotate(-1deg) translateX(1rem);
+}
+.ebookLink {
+  background: #717194;
+  transform: rotate(2deg);
+}
