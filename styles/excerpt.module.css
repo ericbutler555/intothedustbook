@@ -1,0 +1,68 @@
+/* intro */
+
+.introContainer {
+  padding: 4rem;
+  background: #717194 url("/asfalt-light.png") repeat;
+  color: white;
+}
+.introContainer h1 {
+  margin: 0;
+  color: white;
+  font-size: 6rem;
+}
+.introContainer a {
+  margin-top: 2rem;
+}
+.introCover {
+  float: right;
+  margin-left: 4rem;
+  transform: scale(0.7);
+}
+
+/* tabs */
+
+.tabs {
+  list-style: none;
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  padding: 0 6rem;
+  background: #bc9134;
+}
+.tabs li {
+  float: left;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border-right: 2px solid white;
+}
+.tabs li:nth-of-type(1) {
+  border-left: 2px solid white;
+}
+.tabs a {
+  display: block;
+  height: 100%;
+  padding: 1.1rem 2rem 0;
+  color: white;
+  text-decoration: none;
+  transition: all 0.1s;
+  text-align: center;
+}
+.tabs a:hover,
+.tabs a.isActive {
+  background: #d08155;
+}
+
+/* end cta button */
+
+.bottomCta {
+  padding: 0 6rem 4rem;
+}
+
+/* disclaimer */
+
+.disclaimerContainer {
+  padding: 6rem;
+  border-top: 1px solid #ccc;
+  font-size: 1.4rem;
+}
