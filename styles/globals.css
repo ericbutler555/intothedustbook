@@ -1,35 +1,68 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
-main {
-  padding: 5rem 0;
-  flex: 1;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #faebd6 url("/asfalt-dark.png") repeat;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-size: 62.5%; /* so 1rem = 10px */
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#__next {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+/* containers */
+
+.innerContainer {
+  margin: 0 auto;
+  max-width: 96rem;
+}
+.whiteContainer {
+  background: white;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.6);
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* typography */
+
+h1, h2 {
+  font-family: "Trade Winds", -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+h2 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+/* utility classes */
+
+.linkUnstyled {
+  color: inherit;
+  text-decoration: none;
+}
+.linkUncolored {
+  color: inherit;
+}
+
+.alignC {
+  text-align: center;
+}
+.alignR {
+  text-align: right;
 }
