@@ -77,7 +77,7 @@ export default function Home() {
             <p>
               <em>Into the Dust: The Virgin, A Burning Man Story</em> is a work of fiction. Names, characters, places, and incidents either are products of the author&rsquo;s imagination or are used under licensed agreement. Any resemblance to actual events or locales or persons, living or dead, is entirely coincidental except that with permission.
             </p>
-            <p>All text on this page is copyright &copy; 2021 by Jack Lyons. All rights are reserved. No part of this text may be reproduced or transmitted in any form or by any means, electronic or mechanical, without explicit permission in writing from Jack Lyons or his assigns.</p>
+            <p>All text on this page is copyright &copy; 2021 by Jack Lyons Author, LLC. All rights are reserved. No part of this text may be reproduced or transmitted in any form or by any means, electronic or mechanical, without explicit permission in writing from Jack Lyons or his assigns.</p>
           </aside>
         </div>
       </main>

@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className="innerContainer">
         <p>
-          All content &copy; 2021 by Jack Lyons. Website by{" "}
+          All content &copy; 2021 by Jack Lyons Author, LLC. Website by{" "}
           <a className="linkUncolored" href="https://ericbutler555.github.io/resume-ng/" target="_blank">
             Eric Butler
           </a>

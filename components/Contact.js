@@ -15,16 +15,19 @@ export default function Reviews() {
           Send him a message below.
         </p>
         <div className={styles.formContainer}>
-          <form name="contactForm" method="post" data-netlify="true">
+          <form name="contactForm" method="post" data-netlify="true" data-netlify-recaptcha="true">
             <div className={styles.formField}>
-              <label for="emailAddress">Your Email</label>
+              <label htmlFor="emailAddress">Your Email</label>
               <input type="email" name="emailAddress" id="emailAddress" placeholder="your@email.com" />
               <span className={styles.validationMessage}>Enter a valid email</span>
             </div>
             <div className={styles.formField}>
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea name="message" id="message" placeholder="Say something"></textarea>
               <span className={styles.validationMessage}>Can't be blank</span>
+            </div>
+            <div className={styles.formField}>
+              <div data-netlify-recaptcha="true"></div>
             </div>
             <button type="submit" className={styles.submitButton}>
               SEND

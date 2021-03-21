@@ -64,7 +64,7 @@ export default function Home() {
           <div className={"innerContainer " + styles.inner}>
             <h2>WHAT IS BURNING MAN?</h2>
             <p className={styles.callout}>A place made sacred by people who need a sacred place.</p>
-            <p>Why are people drawn to Burning Man, and what brings them back again and again? What actually happens at the maligned, misunderstood, iconic event staged in the middle of a Nevada desert? More importantly, what happens to the people who go?</p>
+            <p style={{ marginBottom: "0" }}>Why are people drawn to Burning Man, and what brings them back again and again? What actually happens at the maligned, misunderstood, iconic event staged in the middle of a Nevada desert? More importantly, what happens to the people who go?</p>
           </div>
         </aside>
         <Reviews />
