@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Reviews from "@components/Reviews";
@@ -22,7 +21,7 @@ export default function Home() {
           <section className={styles.bookGraphic}>
             <div className={bookStyles.bookContainer}>
               <div className={bookStyles.book}>
-                <Image src="/cover-into-the-dust.jpg" alt="Front cover of Into the Dust: The Virgin, A Burning Man Story by Jack Lyons" width={300} height={450} />
+                <img src="/IntoTheDust-FrontCover.jpg" alt="Front cover of Into the Dust: The Virgin, A Burning Man Story by Jack Lyons" width="300" height="450" />
               </div>
             </div>
             <div className={styles.specs}>Published April 2021 &bull; 352 pages &bull; 6&times;9" &bull; General Fiction</div>
