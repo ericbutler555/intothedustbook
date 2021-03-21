@@ -11,6 +11,9 @@
 
 /* book title */
 
+.bookTitleContainer h1 {
+  margin-bottom: 0;
+}
 .bookTitleContainer h1 span {
   display: block;
 }
@@ -28,6 +31,7 @@
 
 .buyButtonsContainer {
   margin-bottom: 8rem;
+  padding-top: 5rem;
 }
 
 /* book summary */
@@ -74,7 +78,7 @@
     text-align: center;
   }
   .bookTitleContainer {
-    margin: 0 0 5rem;
+    margin: 0;
     text-align: center;
   }
   .bookTitleContainer h1 {
@@ -105,7 +109,7 @@
     padding-right: 2rem;
   }
   .bookTitleContainer {
-    margin: 8rem 0 5rem;
+    margin: 8rem 0 0;
     padding-left: 4rem;
   }
   .title {
