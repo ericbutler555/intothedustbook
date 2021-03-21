@@ -20,7 +20,7 @@ export default function Home() {
         <meta name="description" content="Read two FREE chapters from Jack Lyons's new novel about the intense, life-changing experiences a woman has on her first trip to Burning Man." />
       </Head>
       <Header />
-      <main style={{ flex: "1 1 100%", width: "100%" }}>
+      <main className="pageContent">
         <div className="innerContainer whiteContainer">
           <div className={styles.introContainer}>
             <div className={styles.introCover}>

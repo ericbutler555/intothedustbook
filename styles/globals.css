@@ -28,6 +28,10 @@ body {
 
 /* containers */
 
+.pageContent {
+  flex: 1 1 100%;
+  width: 100%;
+}
 .innerContainer {
   margin: 0 auto;
   max-width: 96rem;
