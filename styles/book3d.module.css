@@ -14,13 +14,13 @@
   perspective: 750px;
 }
 .bookContainer .book {
+  animation: bookRotate 1s ease 0s 1;
   width: 300px;
   height: 450px;
   position: relative;
   transform-style: preserve-3d;
   transform: rotateY(-22deg);
   transition: transform 1s ease;
-  animation: 1s ease 0s 1 bookRotate;
 }
 .bookContainer .book:hover {
   transform: rotateY(0deg);
