@@ -1,0 +1,71 @@
+.contact {
+	padding: 8rem 0;
+	background: #717194 url('/asfalt-dark.png') repeat;
+	color: white;
+	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+}
+.contact h2 {
+	color: white;
+	text-align: center;
+}
+
+.formContainer {
+	max-width: 68rem;
+	margin: 4rem auto;
+}
+
+.formField {
+	margin-bottom: 1em;
+}
+.formField label {
+	display: block;
+	margin-bottom: 0.4rem;
+}
+.formField input,
+.formField textarea {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	border: 0;
+	border-radius: 0.2rem;
+	font: inherit;
+}
+.formField textarea {
+	resize: vertical;
+	min-height: 8em;
+}
+
+.validationMessage {
+	display: none;
+	padding: 0.4rem 1rem;
+	border-radius: 0.2rem;
+	background: #a62222;
+	color: white;
+	font-size: 1.4rem;
+}
+
+.submitButton {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	width: auto;
+	min-width: 14rem;
+	margin: 1rem 0;
+	padding: 1.5rem 2rem;
+	border-radius: 0.5rem;
+	border: 2px solid white;
+	background: #d08155;
+	background: linear-gradient(-20deg, #d05555, #c16938);
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1;
+	box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+	transform-origin: center center;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.submitButton:hover {
+	top: 0.4rem;
+}
