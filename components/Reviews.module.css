@@ -1,0 +1,49 @@
+.ReviewsContainer {
+  margin: 12rem 0;
+}
+.ReviewsContainer h2 {
+  margin-bottom: 8rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.ReviewsContainer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-count: 2;
+  column-gap: 0;
+}
+
+.review {
+  background: white;
+  margin: 0;
+  padding: 4rem;
+  border-radius: 0.2rem;
+  font-size: 2.2rem;
+  transform: rotate(-1deg);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
+  -webkit-column-break-inside: avoid;
+  -webkit-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.review:nth-of-type(2n) {
+  transform: rotate(2deg);
+}
+.review:nth-of-type(3n) {
+  transform: rotate(-3deg);
+}
+.review:nth-of-type(4n) {
+  transform: rotate(3deg);
+}
+.review p {
+  margin: 0 0 0.5em;
+}
+.review .byline {
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.review .byline::before {
+  content: "—";
+}
