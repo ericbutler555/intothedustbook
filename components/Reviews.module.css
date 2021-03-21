@@ -1,25 +1,24 @@
 .ReviewsContainer {
-  margin: 12rem 0;
+  margin: 6rem 0;
+  overflow: hidden;
 }
 .ReviewsContainer h2 {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .ReviewsContainer ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 6rem;
   padding: 0;
-  column-count: 2;
-  column-gap: 0;
 }
 
 .review {
   background: white;
   margin: 0;
-  padding: 4rem;
+  padding: 3rem;
   border-radius: 0.2rem;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   transform: rotate(-1deg);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
   -webkit-column-break-inside: avoid;
@@ -46,4 +45,28 @@
 }
 .review .byline::before {
   content: "—";
+}
+
+@media (min-width: 760px) {
+  .ReviewsContainer {
+    margin-top: 8rem;
+  }
+  .ReviewsContainer h2 {
+    margin-bottom: 8rem;
+    font-size: 4rem;
+  }
+  .ReviewsContainer ul {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ReviewsContainer {
+    margin-top: 12rem;
+  }
+  .review {
+    padding: 4rem;
+    font-size: 2.2rem;
+  }
 }

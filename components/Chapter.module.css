@@ -1,8 +1,9 @@
 .chapter {
-  padding: 6rem;
+  padding: 6rem 2rem 4rem;
   text-align: justify;
   font-family: "Adobe Garamond Pro", "Adobe Garamond", Garamond, Georgia, serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  line-height: 1.4;
   -webkit-hyphens: auto;
   hyphens: auto;
 }
@@ -12,4 +13,11 @@
 .chapter p {
   margin: 0;
   text-indent: 1.25em;
+}
+
+@media (min-width: 760px) {
+  .chapter {
+    padding: 6rem;
+    font-size: 2.2rem;
+  }
 }

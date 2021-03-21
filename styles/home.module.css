@@ -1,8 +1,8 @@
 /* book graphic */
 
 .bookGraphic {
-  float: right;
-  padding: 4rem 0; /* to fit graphic transform */
+  padding: 4rem 0 0; /* to fit graphic transform */
+  transform: scale(0.9);
 }
 .specs {
   margin-top: 6rem;
@@ -11,24 +11,17 @@
 
 /* book title */
 
-.bookTitleContainer {
-  margin: 8rem 0 5rem;
-}
 .bookTitleContainer h1 span {
   display: block;
 }
 .title {
   color: #793120;
-  font-size: 6rem;
+  font-size: 4rem;
 }
 .subtitle1 {
-  margin: 0 0 3rem 3rem;
+  margin: 0 0 3rem;
   color: #b0462d;
-  font-size: 5rem;
   text-shadow: 1px 2px 0 black;
-}
-.author {
-  margin-left: 8rem;
 }
 
 /* buy buttons */
@@ -41,6 +34,7 @@
 
 .summaryContainer {
   clear: both;
+  padding: 0 2rem;
   font-size: 2.2rem;
 }
 
@@ -52,25 +46,105 @@
 
 .burningManContainer {
   margin: 6rem 0;
-  padding: 12rem 0;
+  padding: 8rem 2rem;
   background: #d08155 url("/asfalt-light.png") repeat;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   transform: skewY(-2deg);
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
 }
 .burningManContainer .inner {
-  padding-left: 4rem;
   transform: skewY(2deg);
 }
 .burningManContainer h2 {
-  margin-left: -4rem;
   color: white;
 }
 .burningManContainer .callout {
-  margin: 2rem 0 3rem;
-  padding-left: 6rem;
+  margin: 3rem 0;
   color: #6a4740;
   font-family: "Caveat", -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
+  line-height: 1.2;
+}
+
+/* media queries */
+
+@media (max-width: 759px) {
+  .specs {
+    text-align: center;
+  }
+  .bookTitleContainer {
+    margin: 0 0 5rem;
+    text-align: center;
+  }
+  .bookTitleContainer h1 {
+    margin-top: 0;
+  }
+  .subtitle2,
+  .author {
+    font-size: 2.8rem;
+  }
+  .buyButtonsContainer a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .summaryContainer {
+    font-size: 1.8rem;
+  }
+  .burningManContainer h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .bookGraphic {
+    float: right;
+    padding: 4rem 0;
+  }
+  .specs {
+    padding-right: 2rem;
+  }
+  .bookTitleContainer {
+    margin: 8rem 0 5rem;
+    padding-left: 4rem;
+  }
+  .title {
+    color: #793120;
+    font-size: 6rem;
+  }
+  .subtitle1 {
+    margin: 0 0 3rem 3rem;
+    font-size: 5rem;
+  }
+  .author {
+    margin-left: 8rem;
+  }
+  .buyButtonsContainer {
+    padding-left: 3rem;
+  }
+  .summaryContainer {
+    clear: both;
+    font-size: 2.2rem;
+  }
+  .burningManContainer {
+    margin: 6rem 0;
+    padding: 12rem 2rem;
+    font-size: 2.2rem;
+  }
+  .burningManContainer .inner {
+    padding-left: 4rem;
+  }
+  .burningManContainer .callout {
+    padding-left: 6rem;
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bookGraphic {
+    transform: scale(1);
+  }
+  .burningManContainer h2 {
+    margin-left: -4rem;
+  }
 }
