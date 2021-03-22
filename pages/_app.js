@@ -15,6 +15,13 @@ function Application({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-49EWT5RZ16"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'G-49EWT5RZ16');
+        </script>
       </Head>
       <Component {...pageProps} />
     </>
