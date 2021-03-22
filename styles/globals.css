@@ -43,7 +43,7 @@ body {
 
 /* typography */
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Trade Winds", -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
   font-size: 3.6rem;
   font-weight: bold;

@@ -1,6 +1,20 @@
+import { useState } from "react";
+import { useFormspark } from "@formspark/use-formspark";
 import styles from "./Contact.module.css";
 
-export default function Reviews() {
+const FORMSPARK_FORM_ID = "kU4CIIsX";
+
+export default function Contact() {
+  const [emailAddress, setEmailAddress] = useState("");
+  const [message, setMessage] = useState("");
+  const [submit, submitting] = useFormspark({formId: FORMSPARK_FORM_ID});
+  const [formSuccess, setFormSuccess] = useState(false);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await submit({emailAddress, message});
+    setFormSuccess(true);
+  };
+
   return (
     <section className={styles.contact}>
       <div className="innerContainer">
@@ -14,26 +28,41 @@ export default function Reviews() {
           <br />
           Send him a message below.
         </p>
-        <div className={styles.formContainer}>
-          <form name="contactForm" method="post" data-netlify="true" data-netlify-recaptcha="true">
-            <div className={styles.formField}>
-              <label htmlFor="emailAddress">Your Email</label>
-              <input type="email" name="emailAddress" id="emailAddress" placeholder="your@email.com" />
-              <span className={styles.validationMessage}>Enter a valid email</span>
+        {formSuccess ? (
+          <div className={styles.formContainer}>
+            <div className={styles.successContainer}>
+              <h3>THANK YOU</h3>
+              <p>Your message has been sent.</p>
             </div>
-            <div className={styles.formField}>
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" placeholder="Say something"></textarea>
-              <span className={styles.validationMessage}>Can't be blank</span>
-            </div>
-            <div className={styles.formField}>
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-            <button type="submit" className={styles.submitButton}>
-              SEND
-            </button>
-          </form>
-        </div>
+          </div>
+        ) : (
+          <div className={styles.formContainer}>
+            <form onSubmit={handleSubmit} name="contactForm" method="post">
+              <div className={styles.formField}>
+                <label htmlFor="emailAddress">Your Email</label>
+                <input type="email"
+                  name="emailAddress"
+                  id="emailAddress"
+                  value={emailAddress}
+                  onChange={(e) => setEmailAddress(e.target.value)}
+                  placeholder="your@email.com"
+                  required />
+              </div>
+              <div className={styles.formField}>
+                <label htmlFor="message">Your Message</label>
+                <textarea name="message"
+                  id="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Say something"
+                  required></textarea>
+              </div>
+              <button type="submit" className={styles.submitButton}>
+                SEND
+              </button>
+            </form>
+          </div>
+        )}
       </div>
     </section>
   );
