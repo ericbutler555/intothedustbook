@@ -16,12 +16,12 @@ function Application({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-49EWT5RZ16"></script>
-        <script>
+        <script>{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
           gtag('config', 'G-49EWT5RZ16');
-        </script>
+        `}</script>
       </Head>
       <Component {...pageProps} />
     </>
