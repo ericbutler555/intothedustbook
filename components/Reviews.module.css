@@ -9,7 +9,7 @@
 }
 .ReviewsContainer ul {
   list-style: none;
-  margin: 0 0 6rem;
+  margin: 0 auto 6rem;
   padding: 0;
 }
 
@@ -58,6 +58,10 @@
   .ReviewsContainer ul {
     column-count: 2;
     column-gap: 0;
+  }
+  .ReviewsContainer ul.singleItem {
+    columns: 1;
+    max-width: 48rem;
   }
 }
 
