@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
-import Head from "next/head";
 import styles from "./Contact.module.css";
 
-const FORMSPARK_FORM_ID = "kU4CIIsX";
+const FORMSPARK_FORM_ID = "sIJ9Exqb";
 
 export default function Contact() {
   const [emailAddress, setEmailAddress] = useState("");
