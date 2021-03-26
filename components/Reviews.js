@@ -2,6 +2,10 @@ import styles from "./Reviews.module.css";
 
 const reviews = [
   {
+    body: "Wondrous things unfold with every turn of the page and thanks to the magic of playa one never knows what to expect!",
+    byline: "hawk hrdly",
+  },
+  {
     body: "It gave me playa dreams for a month",
     byline: "Jessie Groth",
   },
