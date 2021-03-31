@@ -33,6 +33,15 @@
   margin-bottom: 8rem;
   padding-top: 5rem;
 }
+.comingSoonMessage {
+  margin: 3rem 0;
+  padding: 0 2rem;
+  color: #6a4740;
+  font-family: "Caveat", -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
 
 /* book summary */
 
@@ -91,6 +100,9 @@
   .buyButtonsContainer a {
     margin-left: auto;
     margin-right: auto;
+  }
+  .comingSoonMessage {
+    text-align: center;
   }
   .summaryContainer {
     font-size: 1.8rem;

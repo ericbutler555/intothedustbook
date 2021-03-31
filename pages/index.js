@@ -35,7 +35,8 @@ export default function Home() {
             </h1>
           </section>
           <div id="buy" className={styles.buyButtonsContainer}>
-            <a className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/" title="Buy from Amazon">
+            <div className={styles.comingSoonMessage}>Buy Links Coming Soon!</div>
+            {/* <a className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/" title="Buy from Amazon">
               BUY PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
@@ -46,7 +47,7 @@ export default function Home() {
             <a className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/" title="Buy for Kindle">
               BUY E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
-            </a>
+            </a> */}
           </div>
           <article className={styles.summaryContainer}>
             <p>Burning Man is just a hedonistic music festival, a decadent party for burnouts, druggies, and hippies. Or so Diane believes, until an unexpected invitation from her closest friend opens a door to unknown possibilities.</p>
