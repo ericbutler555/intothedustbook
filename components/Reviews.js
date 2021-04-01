@@ -9,6 +9,10 @@ const reviews = [
     body: "It gave me playa dreams for a month",
     byline: "Jessie Groth",
   },
+  {
+    body: "It really makes you feel like you are on the playa! I could totally relate to all of the experiences. Overall it’s an entertaining story with great characters whether you’ve been to the burn or not.. a must read. if you plan to go.",
+    byline: "MissAlicious"
+  }
 ];
 
 export default function Reviews() {
