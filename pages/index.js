@@ -19,6 +19,7 @@ export default function Home() {
       <main className="pageContent">
         <div className="innerContainer">
           <section className={styles.bookGraphic}>
+            <div dangerouslySetInnerHTML={{ __html: "<!-- Cover effect attribution: https://github.com/scastiel/book-cover-3d -->" }}></div>
             <div className={bookStyles.bookContainer}>
               <div className={bookStyles.book}>
                 <img src="/IntoTheDust-FrontCover.jpg" alt="Front cover of Into the Dust: The Virgin, A Burning Man Story by Jack Lyons" width="300" height="450" />
@@ -35,19 +36,18 @@ export default function Home() {
             </h1>
           </section>
           <div id="buy" className={styles.buyButtonsContainer}>
-            <div className={styles.comingSoonMessage}>Buy Links Coming Soon!</div>
-            {/* <a className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/" title="Buy from Amazon">
+            <a id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Buy paperback from Amazon">
               BUY PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
-            <a className={buttons.buyButton + " " + buttons.hardcoverLink} href="https://www.butlerbooks.com/into-the-dust.html" title="Buy from Butler Books">
+            {/* <a id="buyHardcover" className={buttons.buyButton + " " + buttons.hardcoverLink} href="https://www.butlerbooks.com/into-the-dust.html" title="Buy hardcover from Butler Books">
               BUY HARDCOVER
               <img src="/ButlerBooks-logo-alt.svg" width="25" alt="" />
-            </a>
-            <a className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/" title="Buy for Kindle">
+            </a> */}
+            <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy ebook for Kindle">
               BUY E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
-            </a> */}
+            </a>
           </div>
           <article className={styles.summaryContainer}>
             <p>Burning Man is just a hedonistic music festival, a decadent party for burnouts, druggies, and hippies. Or so Diane believes, until an unexpected invitation from her closest friend opens a door to unknown possibilities.</p>
