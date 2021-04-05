@@ -2,6 +2,9 @@ import Head from "next/head";
 import "@styles/globals.css";
 
 function Application({ Component, pageProps }) {
+
+  const gtagCode = `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-49EWT5RZ16');`;
+
   return (
     <>
       <Head>
@@ -16,12 +19,7 @@ function Application({ Component, pageProps }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-49EWT5RZ16"></script>
-        <script>{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-          gtag('config', 'G-49EWT5RZ16');
-        `}</script>
+        <script dangerouslySetInnerHTML={{ __html: gtagCode }}></script>
       </Head>
       <Component {...pageProps} />
     </>

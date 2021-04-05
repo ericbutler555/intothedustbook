@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Into the Dust: The Virgin - A Burning Man Story by Jack Lyons</title>
-        <meta name="description" content="Available in paperback, hardcover and e-book, read Jack Lyons's new novel about the intense, life-changing experiences a woman has on her first trip to Burning Man." />
+        <title>Into the Dust: The Virgin, A Burning Man Story by Jack Lyons</title>
+        <meta name="description" content="In Jack Lyons's new novel, a woman spends two intense, life-changing weeks at Burning Man, adapting to the festival's alternative lifestyle and having unimaginable new experiences." />
       </Head>
       <Header />
       <main className="pageContent">
@@ -55,11 +55,7 @@ export default function Home() {
               BUY PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
-            {/* <a id="buyHardcover" className={buttons.buyButton + " " + buttons.hardcoverLink} href="https://www.butlerbooks.com/into-the-dust.html" title="Buy hardcover from Butler Books">
-              BUY HARDCOVER
-              <img src="/ButlerBooks-logo-alt.svg" width="25" alt="" />
-            </a> */}
-            <a onClick={onEbookLinkClick} id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy ebook for Kindle">
+            <a onClick={onEbookLinkClick} id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy e-book for Kindle">
               BUY E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
