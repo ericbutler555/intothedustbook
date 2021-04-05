@@ -9,6 +9,21 @@ import bookStyles from "@styles/book3d.module.css";
 import buttons from "@styles/buttons.module.css";
 
 export default function Home() {
+
+  const onPaperbackLinkClick = () => {
+    gtag('event', 'click', {
+      'event_category': 'buy link',
+      'event_label': 'paperback'
+    });
+  };
+
+  const onEbookLinkClick = () => {
+    gtag('event', 'click', {
+      'event_category': 'buy link',
+      'event_label': 'ebook'
+    });
+  };
+
   return (
     <>
       <Head>
@@ -36,7 +51,7 @@ export default function Home() {
             </h1>
           </section>
           <div id="buy" className={styles.buyButtonsContainer}>
-            <a id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Buy paperback from Amazon">
+            <a onClick={onPaperbackLinkClick} id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Buy paperback from Amazon">
               BUY PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
@@ -44,7 +59,7 @@ export default function Home() {
               BUY HARDCOVER
               <img src="/ButlerBooks-logo-alt.svg" width="25" alt="" />
             </a> */}
-            <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy ebook for Kindle">
+            <a onClick={onEbookLinkClick} id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy ebook for Kindle">
               BUY E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
