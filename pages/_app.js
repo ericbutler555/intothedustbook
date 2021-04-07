@@ -3,7 +3,11 @@ import "@styles/globals.css";
 
 function Application({ Component, pageProps }) {
 
-  const gtagCode = `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)} gtag('js', new Date()); gtag('config', 'G-49EWT5RZ16');`;
+  const gtmCode = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WD2H2WF');`;
 
   return (
     <>
@@ -18,8 +22,7 @@ function Application({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-49EWT5RZ16"></script>
-        <script dangerouslySetInnerHTML={{ __html: gtagCode }}></script>
+        <script dangerouslySetInnerHTML={{ __html: gtmCode }}></script>
       </Head>
       <Component {...pageProps} />
     </>
