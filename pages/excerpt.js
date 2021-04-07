@@ -9,7 +9,7 @@ import styles from "@styles/excerpt.module.css";
 import bookStyles from "@styles/book3d.module.css";
 import buttons from "@styles/buttons.module.css";
 
-export default function Home() {
+export default function Excerpt() {
   const [activeChapter, setActiveChapter] = useState("ch9");
 
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Read two FREE chapters from Jack Lyons's new novel about the intense, life-changing experiences a woman has on her first trip to Burning Man." />
       </Head>
       <Header />
-      <main className="pageContent">
+      <main id="excerptPage" className="pageContent">
         <div className="innerContainer whiteContainer">
           <div className={styles.introContainer}>
             <div className={styles.introCover}>
@@ -39,12 +39,12 @@ export default function Home() {
           </div>
           <ul className={styles.tabs}>
             <li>
-              <a href="#ch1" className={activeChapter === "ch1" ? styles.isActive : ""} onClick={() => setActiveChapter("ch1")}>
+              <a id="readCh1" href="#ch1" className={activeChapter === "ch1" ? styles.isActive : ""} onClick={() => setActiveChapter("ch1")}>
                 Read Chapter 1
               </a>
             </li>
             <li>
-              <a href="#ch9" className={activeChapter === "ch9" ? styles.isActive : ""} onClick={() => setActiveChapter("ch9")}>
+              <a id="readCh9" href="#ch9" className={activeChapter === "ch9" ? styles.isActive : ""} onClick={() => setActiveChapter("ch9")}>
                 Read Chapter 9
               </a>
             </li>

@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="In Jack Lyons's new novel, a woman spends two intense, life-changing weeks at Burning Man, adapting to the festival's alternative lifestyle and having unimaginable new experiences." />
       </Head>
       <Header />
-      <main className="pageContent">
+      <main id="homePage" className="pageContent">
         <div className="innerContainer">
           <section className={styles.bookGraphic}>
             <div dangerouslySetInnerHTML={{ __html: "<!-- Cover effect attribution: https://github.com/scastiel/book-cover-3d -->" }}></div>
