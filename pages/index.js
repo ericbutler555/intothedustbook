@@ -44,6 +44,13 @@ export default function Home() {
               BUY E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
+            <p className={styles.wholesaleMessage}>
+              For bulk or wholesale orders, send Jack a message in the{" "}
+              <a href="#contactJack" className="linkUncolored">
+                form below
+              </a>
+              .
+            </p>
           </div>
           <article className={styles.summaryContainer}>
             <p>Burning Man is just a hedonistic music festival, a decadent party for burnouts, druggies, and hippies. Or so Diane believes, until an unexpected invitation from her closest friend opens a door to unknown possibilities.</p>

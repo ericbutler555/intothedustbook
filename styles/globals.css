@@ -25,6 +25,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+::selection {
+  background: #c16938;
+  color: white;
+}
 
 /* containers */
 

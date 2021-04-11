@@ -30,17 +30,13 @@
 /* buy buttons */
 
 .buyButtonsContainer {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   padding-top: 5rem;
 }
-.comingSoonMessage {
-  margin: 3rem 0;
-  padding: 0 2rem;
-  color: #6a4740;
-  font-family: "Caveat", -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.2;
+.wholesaleMessage {
+  margin-top: 6rem;
+  font-size: 1.4rem;
+  font-style: italic;
 }
 
 /* book summary */
@@ -101,7 +97,8 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .comingSoonMessage {
+  .wholesaleMessage {
+    padding: 0 2rem;
     text-align: center;
   }
   .summaryContainer {
@@ -136,6 +133,7 @@
     margin-left: 8rem;
   }
   .buyButtonsContainer {
+    margin-bottom: 8rem;
     padding-left: 3rem;
   }
   .summaryContainer {

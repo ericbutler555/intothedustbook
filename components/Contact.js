@@ -16,10 +16,10 @@ export default function Contact() {
   };
 
   return (
-    <section className={styles.contact}>
+    <section id="contactJack" className={styles.contact}>
       <div className="innerContainer">
         <h2>Contact Jack</h2>
-        <p style={{ textAlign: "center" }}>
+        <p className="alignC">
           Enjoyed the book?
           <br />
           Want to interview Jack on your blog, podcast or stream?
