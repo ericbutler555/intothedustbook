@@ -52,6 +52,7 @@ export default function Contact() {
             </form>
           </div>
         )}
+        <p className="alignC">You can also find Jack on <a className="linkUncolored" href="https://www.facebook.com/jack.lyons.39566" target="_blank" rel="noopener">his Facebook page</a>.</p>
       </div>
     </section>
   );
