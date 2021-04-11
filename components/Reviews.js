@@ -12,6 +12,10 @@ const reviews = [
   {
     body: "It really makes you feel like you are on the playa! I could totally relate to all of the experiences. Overall it’s an entertaining story with great characters whether you’ve been to the burn or not... a must read if you plan to go.",
     byline: "MissAlicious"
+  },
+  {
+    body: "This past week has left me heavy of heart and soul for various reasons. Reading the book, I realized I had found a dusty escape. Helps put my head in a better place when I need it most.",
+    byline: "Angela"
   }
 ];
 
