@@ -35,13 +35,13 @@ export default function Home() {
               <span className={styles.author}>by Jack Lyons</span>
             </h1>
           </section>
-          <div id="buy" className={styles.buyButtonsContainer}>
-            <a id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Buy paperback from Amazon">
-              BUY PAPERBACK
+          <div id="get" className={styles.buyButtonsContainer}>
+            <a id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Get paperback from Amazon">
+              GET PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
-            <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy e-book for Kindle">
-              BUY E-BOOK
+            <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Get e-book for Kindle">
+              GET E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
               <span className={buttons.buttonBadge}>
                 <span>

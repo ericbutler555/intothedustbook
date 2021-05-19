@@ -5,9 +5,8 @@ export default function Header() {
   return (
     <header className={styles.pageHeader}>
       <div className={styles.inner}>
-        <span></span>
-        <Link href="/#buy">
-          <a className={styles.button}>BUY THE BOOK</a>
+        <Link href="/#get">
+          <a className={styles.button}>GET THE BOOK</a>
         </Link>
       </div>
     </header>

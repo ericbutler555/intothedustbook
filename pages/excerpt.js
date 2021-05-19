@@ -4,13 +4,13 @@ import Link from "next/link";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Chapter1 from "@components/Chapter1";
-import Chapter9 from "@components/Chapter9";
+import Chapter10 from "@components/Chapter10";
 import styles from "@styles/excerpt.module.css";
 import bookStyles from "@styles/book3d.module.css";
 import buttons from "@styles/buttons.module.css";
 
 export default function Excerpt() {
-  const [activeChapter, setActiveChapter] = useState("ch9");
+  const [activeChapter, setActiveChapter] = useState("ch10");
 
   return (
     <>
@@ -33,7 +33,7 @@ export default function Excerpt() {
             <p>
               Here you can read two free chapters from <em>Into the Dust: The Virgin</em>, a novel by Jack Lyons, published in April 2021.
             </p>
-            <Link href="/#buy">
+            <Link href="/#get">
               <a className={buttons.linkButton}>GET THE BOOK</a>
             </Link>
           </div>
@@ -44,18 +44,18 @@ export default function Excerpt() {
               </a>
             </li>
             <li>
-              <a id="readCh9" href="#ch9" className={activeChapter === "ch9" ? styles.isActive : ""} onClick={() => setActiveChapter("ch9")}>
-                Read Chapter 9
+              <a id="readCh10" href="#ch10" className={activeChapter === "ch10" ? styles.isActive : ""} onClick={() => setActiveChapter("ch10")}>
+                Read Chapter 10
               </a>
             </li>
           </ul>
           {activeChapter === "ch1" && <Chapter1 />}
-          {activeChapter === "ch9" && <Chapter9 />}
+          {activeChapter === "ch10" && <Chapter10 />}
           <div className={styles.bottomCta}>
             <p>
               <strong>End of chapter.</strong> Want to keep reading?
             </p>
-            <Link href="/#buy">
+            <Link href="/#get">
               <a className={buttons.linkButton}>GET THE BOOK</a>
             </Link>
           </div>
