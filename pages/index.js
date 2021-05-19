@@ -43,6 +43,13 @@ export default function Home() {
             <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Buy e-book for Kindle">
               BUY E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
+              <span className={buttons.buttonBadge}>
+                <span>
+                  <sup>$</sup>
+                  3
+                  <sup>.99</sup>
+                </span>
+              </span>
             </a>
             <p className={styles.wholesaleMessage}>
               For bulk or wholesale orders, send Jack a message in the{" "}
