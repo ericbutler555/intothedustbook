@@ -11,10 +11,12 @@
 
 /* book title */
 
-.bookTitleContainer h1 {
+.bookTitleContainer h1,
+.bookTitleContainer h2 {
   margin-bottom: 0;
 }
-.bookTitleContainer h1 span {
+.bookTitleContainer h1 span,
+.bookTitleContainer h2 span {
   display: block;
 }
 .title {
@@ -25,6 +27,10 @@
   margin: 0 0 3rem;
   color: #b0462d;
   text-shadow: 1px 2px 0 black;
+}
+.subtitle2,
+.author {
+  font-size: 3.6rem;
 }
 
 /* buy buttons */
@@ -86,7 +92,8 @@
     margin: 0;
     text-align: center;
   }
-  .bookTitleContainer h1 {
+  .bookTitleContainer h1,
+  .bookTitleContainer h2 {
     margin-top: 0;
   }
   .subtitle2,

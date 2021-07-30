@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Chapter1 from "@components/Chapter1";
 import Chapter10 from "@components/Chapter10";
@@ -18,7 +17,6 @@ export default function Excerpt() {
         <title>Excerpt of Into the Dust: The Virgin - A Burning Man Story by Jack Lyons</title>
         <meta name="description" content="Read two FREE chapters from Jack Lyons's new novel about the intense, life-changing experiences a woman has on her first trip to Burning Man." />
       </Head>
-      <Header />
       <main id="excerptPage" className="pageContent">
         <div className="innerContainer whiteContainer">
           <div className={styles.introContainer}>

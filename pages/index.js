@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Reviews from "@components/Reviews";
 import Contact from "@components/Contact";
@@ -15,7 +14,6 @@ export default function Home() {
         <title>Into the Dust: The Virgin, A Burning Man Story by Jack Lyons</title>
         <meta name="description" content="In Jack Lyons's new novel, a woman spends two intense, life-changing weeks at Burning Man, adapting to the festival's alternative lifestyle and having unimaginable new experiences." />
       </Head>
-      <Header />
       <main id="homePage" className="pageContent">
         <div className="innerContainer">
           <section className={styles.bookGraphic}>
@@ -29,11 +27,13 @@ export default function Home() {
           </section>
           <section className={styles.bookTitleContainer}>
             <h1>
-              <span className={styles.title}>INTO THE DUST</span>
-              <span className={styles.subtitle1}>The Virgin</span>
-              <span className={styles.subtitle2}>A Burning Man Story</span>
-              <span className={styles.author}>by Jack Lyons</span>
+              <span className={styles.title}>INTO THE DUST </span>
+              <span className={styles.subtitle1}>— The Virgin</span>
             </h1>
+            <h2>
+              <span className={styles.subtitle2}>A Burning Man Story </span>
+              <span className={styles.author}>by Jack Lyons</span>
+            </h2>
           </section>
           <div id="get" className={styles.buyButtonsContainer}>
             <a id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Get paperback from Amazon">
@@ -43,13 +43,6 @@ export default function Home() {
             <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Get e-book for Kindle">
               GET E-BOOK
               <img src="/amazon.svg" width="20" alt="" />
-              <span className={buttons.buttonBadge}>
-                <span>
-                  <sup>$</sup>
-                  3
-                  <sup>.99</sup>
-                </span>
-              </span>
             </a>
             <p className={styles.wholesaleMessage}>
               For bulk or wholesale orders, send Jack a message in the{" "}
