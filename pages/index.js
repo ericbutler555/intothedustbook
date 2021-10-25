@@ -36,12 +36,16 @@ export default function Home() {
             </h2>
           </section>
           <div id="get" className={styles.buyButtonsContainer}>
-            <a id="buyPaperback" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/1953058175" title="Get paperback from Amazon">
-              GET PAPERBACK
+            <a id="buyPaperback" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/1953058175" title="Get paperback from Amazon">
+              BUY PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
-            <a id="buyEbook" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/B091PH68PG" title="Get e-book for Kindle">
-              GET E-BOOK
+            <a id="buyEbook" className={buttons.buyButton + " " + buttons.ebookLink} href="https://www.amazon.com/dp/B091PH68PG" title="Get e-book for Kindle">
+              BUY E-BOOK
+              <img src="/amazon.svg" width="20" alt="" />
+            </a>
+            <a id="buyAudiobook" className={buttons.buyButton + " " + buttons.audiobookLink} href="https://www.amazon.com/dp/B09JQGLD9S" title="Get audiobook for Audible">
+              BUY AUDIOBOOK
               <img src="/amazon.svg" width="20" alt="" />
             </a>
             <p className={styles.wholesaleMessage}>

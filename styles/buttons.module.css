@@ -39,15 +39,15 @@
 }
 
 .paperbackLink {
-  background: #bc9134;
+  background: #717194;
   transform: rotate(1deg);
 }
-.hardcoverLink {
+.audiobookLink {
   background: #d08155;
   transform: rotate(-1deg) translateX(1rem);
 }
 .ebookLink {
-  background: #717194;
+  background: #bc9134;
   transform: rotate(2deg);
 }
 .buttonBadge {

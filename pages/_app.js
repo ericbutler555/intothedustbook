@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AudioPlayer from "@components/AudioPlayer";
 import "@styles/globals.css";
 
 function Application({ Component, pageProps }) {
@@ -25,6 +26,7 @@ function Application({ Component, pageProps }) {
         <script dangerouslySetInnerHTML={{ __html: gtmCode }}></script>
       </Head>
       <Component {...pageProps} />
+      <AudioPlayer />
     </>
   );
 }
