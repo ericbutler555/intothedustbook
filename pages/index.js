@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <div className={styles.specs}>Published April 2021 &bull; 352 pages &bull; 6&times;9" &bull; General Fiction</div>
           </section>
-          <section className={styles.bookTitleContainer}>
+          <section id="get" className={styles.bookTitleContainer}>
             <h1>
               <span className={styles.title}>INTO THE DUST </span>
               <span className={styles.subtitle1}>— The Virgin</span>
@@ -35,7 +35,7 @@ export default function Home() {
               <span className={styles.author}>by Jack Lyons</span>
             </h2>
           </section>
-          <div id="get" className={styles.buyButtonsContainer}>
+          <div className={styles.buyButtonsContainer}>
             <a id="buyPaperback" className={buttons.buyButton + " " + buttons.paperbackLink} href="https://www.amazon.com/dp/1953058175" title="Get paperback from Amazon">
               BUY PAPERBACK
               <img src="/amazon.svg" width="20" alt="" />
@@ -67,6 +67,7 @@ export default function Home() {
             </div>
           </article>
         </div>
+        <Reviews />
         <aside className={styles.burningManContainer}>
           <div className={"innerContainer " + styles.inner}>
             <h2>WHAT IS BURNING MAN?</h2>
@@ -74,7 +75,6 @@ export default function Home() {
             <p style={{ marginBottom: "0" }}>Why are people drawn to Burning Man, and what brings them back again and again? What actually happens at the maligned, misunderstood, iconic event staged in the middle of a Nevada desert? More importantly, what happens to the people who go?</p>
           </div>
         </aside>
-        <Reviews />
         <Contact />
       </main>
       <Footer />

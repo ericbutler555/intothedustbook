@@ -61,17 +61,8 @@
 
 .burningManContainer {
   margin: 6rem 0;
-  padding: 8rem 2rem;
-  background: #d08155 url("/asfalt-light.png") repeat;
+  padding: 2rem;
   font-size: 1.8rem;
-  transform: skewY(-2deg);
-  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.4);
-}
-.burningManContainer .inner {
-  transform: skewY(2deg);
-}
-.burningManContainer h2 {
-  color: white;
 }
 .burningManContainer .callout {
   margin: 3rem 0;

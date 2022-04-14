@@ -1,5 +1,25 @@
 export const blurbs = [
     {
+        body: "This book exceeded my expectations in every way! Not only did it perfectly illustrate the Burning Man experience and culture, but it is also a kind of step-by-step guide to the basics of preparing for and surviving the wild ride in the desert. I truly felt like I was at Burning Man while reading, like I was on the adventure with Diane, seeing it all through the eyes of a Virgin Burner again.",
+        byline: "Nichole B. via Amazon"
+    },
+    {
+        body: "I found myself instantly living vicariously through Diane’s inaugural journey to the Big Burn and feeling connected to the event in a way countless documentaries I’ve watched on the subject haven’t managed to achieve.",
+        byline: "Karen via Amazon"
+    },
+    {
+        body: "Engaging, well written and true to the principles of the Burn. If you’ve never been and want to go, read this. If you’ve been and want to visit “home” from your living room, read it :)",
+        byline: "Aloha Redmare via Amazon"
+    },
+    {
+        body: "I read this book and enjoyed it tremendously!! Engaging, entertaining, exciting, emotional and inspirational. Now I HAVE to go to Burning Man!",
+        byline: "liz patterson via Amazon"
+    },
+    {
+        body: "I LOVED this book! Not only did it give me additional insights to the meaning of the Burning Man, It was a fun read. Following Diane through her time at Burning Man made me feel like I was THERE!",
+        byline: "palmgirl via Amazon"
+    },
+    {
         body: "Jack Lyons’ book was a treat and a delight in awakening my memories of all of the shenanigans, mishaps and adventures that I have stumbled into through the dust. The book seeped into my consciousness and I caught myself reminiscing and dreaming of the desert and the magic found there.",
         byline: "J. C. Pellerin via Amazon"
     },
@@ -16,11 +36,11 @@ export const blurbs = [
         byline: "Angela"
     },
     {
-        body: "It gave me playa dreams for a month.",
-        byline: "Jessie Groth",
-    },
-    {
         body: "Wondrous things unfold with every turn of the page and thanks to the magic of playa one never knows what to expect!",
         byline: "hawk hrdly",
+    },
+    {
+        body: "It gave me playa dreams for a month.",
+        byline: "Jessie Groth",
     },
 ];
