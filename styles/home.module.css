@@ -108,6 +108,11 @@
 }
 
 @media (min-width: 760px) {
+  .hero {
+    background: url("/bicycles.jpg") no-repeat center center / cover;
+    padding: 1px 0; /* prevent margin collapse */
+    color: white;
+  }
   .bookGraphic {
     float: right;
     padding: 4rem 0;
@@ -116,7 +121,7 @@
     padding-right: 2rem;
   }
   .bookTitleContainer {
-    margin: 8rem 0 0;
+    margin: 6rem 0 0;
     padding-left: 4rem;
   }
   .title {
@@ -131,11 +136,12 @@
     margin-left: 8rem;
   }
   .buyButtonsContainer {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     padding-left: 3rem;
   }
   .summaryContainer {
     clear: both;
+    margin-top: 6rem;
     font-size: 2.2rem;
   }
   .burningManContainer {
