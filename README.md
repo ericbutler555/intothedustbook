@@ -4,4 +4,4 @@ _Into the Dust_ is a novel by Jack Lyons. The first installment is subtitled _Th
 
 This website provides information about the book, chapter excerpts, reader reviews, and links to buy the book from online retailers.
 
-[Visit the book's website](https://www.intothedustbook.com/)
+[Visit the book's website](https://intothedustbook.netlify.app/)
